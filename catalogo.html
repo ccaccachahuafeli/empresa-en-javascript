@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo | Crepa Fresh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .product-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff6f61;
+        }
+
+        .product-card p {
+            color: #6c757d;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .btn-primary {
+            background-color: #ff473f;
+            border: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Catálogo de Crepas</h2>
+        <div class="row">
+            <!-- Producto 1: Crepa Salada -->
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="assets/crepa-salada.jpg" class="card-img-top" alt="Crepa Salada">
+                    <div class="card-body text-center">
+                        <h5 class="product-card-title">Crepa Salada</h5>
+                        <p>Ideal para un almuerzo delicioso.</p>
+                        <p class="price">$45</p>
+                        <a href="detalle-crepa-salada.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2: Crepa Dulce -->
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="assets/crepa-dulce.jpg" class="card-img-top" alt="Crepa Dulce">
+                    <div class="card-body text-center">
+                        <h5 class="product-card-title">Crepa Dulce</h5>
+                        <p>Perfecta para los amantes del dulce.</p>
+                        <p class="price">$40</p>
+                        <a href="detalle-crepa-dulce.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3: Crepa Vegetariana -->
+            <div class="col-md-4 mb-4">
+                <div class="card product-card">
+                    <img src="assets/crepa-vegetariana.jpg" class="card-img-top" alt="Crepa Vegetariana">
+                    <div class="card-body text-center">
+                        <h5 class="product-card-title">Crepa Vegetariana</h5>
+                        <p>Opción saludable y deliciosa.</p>
+                        <p class="price">$50</p>
+                        <a href="detalle-crepa-vegetariana.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="index.html" class="btn btn-secondary mt-4">Regresar a Inicio</a>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías | Crepa Fresh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff7e6;
+        }
+
+        .category-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fff;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-card img {
+            height: 250px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff6f61;
+        }
+
+        .category-card p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .btn-primary {
+            background-color: #ff473f;
+            border: none;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff6f61;
+        }
+
+        .back-btn {
+            background-color: #6c757d;
+            color: white;
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 12px 30px;
+        }
+
+        .back-btn:hover {
+            background-color: #5a6268;
+        }
+
+        .section-title {
+            color: #333;
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="section-title text-center mb-5">Nuestras Categorías de Crepas</h2>  
+        <div class="row">
+            <!-- Categoría Saladas -->
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="./img/salado.jpeg" class="card-img-top" alt="Crepa Saladas">
+                    <div class="card-body text-center">
+                        <h5 class="category-title">Saladas</h5>
+                        <p>Crepas llenas de sabores intensos y deliciosos, ideales para almuerzos o cenas.</p>
+                        <a href="./categoria_int/salado.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Categoría Dulces -->
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="./img/crepadu1.jpeg" class="card-img-top" alt="Crepa Dulce">
+                    <div class="card-body text-center">
+                        <h5 class="category-title">Dulces</h5>
+                        <p>Perfectas para los amantes de lo dulce, con rellenos irresistibles.</p>
+                        <a href="./categoria_int/dulce.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Categoría Vegetarianas -->
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="./img/vegetariano.jpeg" class="card-img-top" alt="Crepa Vegetarianas">
+                    <div class="card-body text-center">
+                        <h5 class="category-title">Vegetarianas</h5>
+                        <p>Opciones saludables y deliciosas, hechas con ingredientes frescos.</p>
+                        <a href="./categoria_int/vegano.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <a href="index.html" class="btn back-btn mt-4">Regresar a Inicio</a>
+        </div>
+    </div>
+</body>
+</html>

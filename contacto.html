@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Crepa Fresh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .btn-social {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        .btn-instagram { background-color: #e1306c; color: white; }
+        .btn-twitter { background-color: #1da1f2; color: white; }
+        .btn-facebook { background-color: #1877f2; color: white; }
+        .btn-tiktok { background-color: #000000; color: white; }
+        .btn-youtube { background-color: #ff0000; color: white; }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+        .form-group input, .form-group button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f8f8f8;
+        }
+        h2, h3 {
+            color: #e63946;
+        }
+    </style>
+        <!-- Enlace al archivo JS -->
+        <script src="JS/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>¡Contáctanos!</h2>
+        <p class="mb-4">Añade tus datos y guárdalos en la lista:</p>
+
+        <!-- Formulario de contacto -->
+        <form id="contactForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">GUARDAR</button>
+            </div>
+        </form>
+
+        <!-- Tabla de contactos -->
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th>NOMBRES</th>
+                    <th>EMAIL</th>
+                    <th>ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los datos se agregarán dinámicamente aquí -->
+            </tbody>
+        </table>
+
+        <!-- Redes sociales (debajo de la tabla) -->
+        <section class="social-media mt-4">
+            <h3>Síguenos en nuestras redes sociales:</h3>
+            <a href="https://www.instagram.com/crepasf.resh/" class="btn btn-social btn-instagram">Instagram</a>
+            <a href="https://x.com/CrepasFresh" class="btn btn-social btn-twitter">Twitter</a>
+            <a href="https://www.facebook.com/profile.php?id=61561492947429&mibextid=ZbWKwL" class="btn btn-social btn-facebook">Facebook</a>
+            <a href="https://www.tiktok.com/@crepas.f..resh?_t=8qQo6Uk3oRi&_r=1" class="btn btn-social btn-tiktok">TikTok</a>
+            <a href="https://youtube.com/@crepas-cf9?si=AAOvcpkdPsgM7UVF" class="btn btn-social btn-youtube">YouTube</a>
+        </section>
+    </div>
+</body>
+</html>

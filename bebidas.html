@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff7e6; /* Fondo crema */
+        }
+
+        .category-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fef9f5; /* Fondo marrón claro */
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-card img {
+            height: 250px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #8b4513; /* Marrón */
+        }
+
+        .category-card p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .btn-primary {
+            background-color: #d2691e; /* Marrón cálido */
+            border: none;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            background-color: #a0522d; /* Marrón más oscuro */
+        }
+
+        .back-btn {
+            background-color: #8b4513; /* Marrón */
+            color: white;
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 12px 30px;
+        }
+
+        .back-btn:hover {
+            background-color: #a0522d;
+        }
+
+        .section-title {
+            color: #6b4226; /* Marrón oscuro */
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="section-title text-center mb-5">BEBIDAS</h2>  
+        <div class="row">
+            <!-- Bebidas Destacadas -->
+            <section class="bebidas container my-5 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-3">
+                        <div class="category-card">
+                            <img src="https://agraria.pe/imgs/a/lx/en-2025-las-bebidas-a-base-de-chocolate-y-cafe-seran-las-de--24260.jpg" class="card-img-top" alt="Bebidas calientes">
+                            <div class="card-body text-center">
+                                <h5 class="category-title">Bebidas calientes</h5>
+                                <p>
+                                    <li>Café S/.2.5</li>
+                                    <li>té S/.2.0</li>
+                                    <li>chocolate S/.3.0</li>
+                                    <li>Cappuccino S/.4.5</li>  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="category-card">
+                            <img src="https://img.freepik.com/fotos-premium/bebidas-refrescantes-verano_118124-36984.jpg" class="card-img-top" alt="Bebidas Frescas">
+                            <div class="card-body text-center">
+                                <h5 class="category-title">Bebidas Frescas</h5>
+                                <p>
+                                    <li>Jugo de Naranja S/.4.0</li>
+                                    <li>Jugo de Frutas S/.3.5</li>
+                                    <li>Limonada S/.4.0</li>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="category-card">
+                            <img src="https://termosyeti.com/wp-content/uploads/2023/10/bebidas-alcoholicas.jpg" class="card-img-top" alt="Bebidas alcolicas">
+                            <div class="card-body text-center">
+                                <h5 class="category-title">Bebidas alcolicas</h5>
+                                <p>
+                                   <li>Vino Blanco S/.6.0</li>
+                                   <li>Vino tinto S/.7.0</li>
+                                   <li>Cervesa S/.8.8</li> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="text-center">
+            <a href="index.html" class="btn back-btn mt-4">Regresar a Inicio</a>
+        </div>
+    </div>
+</body>
+</html>

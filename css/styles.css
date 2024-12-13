@@ -1,0 +1,16 @@
+body {
+    background-color: #f4f2e7;
+}
+
+.bg-cream {
+    background-color: #f4e1d2;
+}
+
+.navbar, .footer {
+    background-color: #6d4c41;
+}
+
+footer {
+    background-color: #6d4c41;
+    color: white;
+}

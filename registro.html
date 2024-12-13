@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Crepa Fresh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 60px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .form-container h2 {
+            margin-bottom: 25px;
+            font-weight: bold;
+            color: #e63946;
+        }
+        .btn-primary {
+            background-color: #e63946;
+            border-color: #e63946;
+        }
+        .btn-primary:hover {
+            background-color: #d62828;
+            border-color: #d62828;
+        }
+        .btn-secondary {
+            background-color: #457b9d;
+            border-color: #457b9d;
+        }
+        .btn-secondary:hover {
+            background-color: #1d3557;
+            border-color: #1d3557;
+        }
+        .text-center a {
+            color: #e63946;
+            text-decoration: none;
+        }
+        .text-center a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2 class="text-center">Registro en Crepa Fresh</h2>
+            <form action="registro-completado.html" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Crea una contraseña" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingresa tu dirección" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+            </form>
+            <p class="text-center mt-4">
+                ¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a>
+            </p>
+            <a href="index.html" class="btn btn-secondary btn-block">Regresar a Inicio</a>
+        </div>
+    </div>
+</body>
+</html>

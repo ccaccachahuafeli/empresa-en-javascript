@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservación | Crepa F.resh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff9a9e, #fecfef);
+            font-family: 'Arial', sans-serif;
+            color: #333333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #e63946;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .btn-primary {
+            background-color: #e63946;
+            border-color: #e63946;
+        }
+        .btn-primary:hover {
+            background-color: #d62828;
+            border-color: #d62828;
+        }
+        .btn-secondary {
+            background-color: #457b9d;
+            border-color: #457b9d;
+        }
+        .btn-secondary:hover {
+            background-color: #1d3557;
+            border-color: #1d3557;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Reserva tu Mesa</h2>
+        <form action="reservacion-confirmada.html" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" class="form-control" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora</label>
+                <input type="time" class="form-control" id="hora" name="hora" required>
+            </div>
+            <div class="form-group">
+                <label for="personas">Número de personas</label>
+                <input type="number" class="form-control" id="personas" name="personas" placeholder="¿Cuántas personas asistirán?" required>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios</label>
+                <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="¿Algo especial que debamos saber?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Reservar</button>
+        </form>
+        <a href="index.html" class="btn btn-secondary btn-block mt-3">Regresar a Inicio</a>
+    </div>
+</body>
+</html>
