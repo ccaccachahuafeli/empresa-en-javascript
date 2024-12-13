@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Función para editar la fila seleccionada
-    window.editRow = function(button) {
+    button.editRow = function(button) {
         const row = button.parentElement.parentElement; // Obtener la fila de la tabla
         const name = row.cells[0].textContent; // Obtener el nombre
         const email = row.cells[1].textContent; // Obtener el correo electrónico
